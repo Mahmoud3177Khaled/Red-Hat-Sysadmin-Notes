@@ -1,20 +1,20 @@
 # RHEL Sysadmin Notes
 
-Comprehensive, practical notes for **Red Hat Enterprise Linux** system administration.
+Comprehensive, hand written notes for **Red Hat Enterprise Linux** system administration track.
 
 - **RH124**: Red Hat System Administration I (Completed)
 - **RH134**: Red Hat System Administration II (In Progress)
-- **Ansible**: Automation (Planned / Coming Soon)
-
-Perfect for RHCSA exam preparation, lab practice, and day-to-day sysadmin work.
+- **Ansible**: Automation (Planned)
+- **Kubernetes**: Container Orchestration (Planned)
 
 ---
 
 ## 📚 About This Repository
 
-These are my personal notes taken while going through the official Red Hat training courses. They focus on **real-world usage**, essential commands, configuration examples, troubleshooting tips, and key concepts you need to master.
+These are my personal notes taken while going through the official Red Hat training courses.  
+They include essential commands, configuration examples, troubleshooting tips, and key concepts explaned in mental models.  
 
-The notes are organized by course modules and written in clean Markdown for easy reading and searching.
+The notes are organized by course modules and written in pure Markdown.
 
 ## ✨ Features
 
