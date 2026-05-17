@@ -47,7 +47,7 @@
 ```
 							***lpadmin:x:114:mahmoud-khaled***		
 												
-			      	groupName:groupPassW:GID:groupMembers
+					     	groupName:groupPassW:GID:groupMembers
 ```
 
 ***Groups have passwords so users can add themselves to them if they know	the password***
@@ -57,7 +57,7 @@
 ```
 										***rocky:!!:20570:0:99999:7:::***
                     
-						user:hashedPass:epochAge:resetWait:PassLife:warnBuffer:expiredLogin:AccExpire:Futureuse
+           	user:hashedPass:epochAge:resetWait:PassLife:warnBuffer:expiredLogin:AccExpire:Futureuse
 ```
 
 **chsh <user> /bin/bash** ---> change the login shell of a user 
