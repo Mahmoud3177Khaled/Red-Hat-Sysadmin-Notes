@@ -13,7 +13,7 @@
 
 **ls /etc/passwd**--->
 ```
-										***rocky:x:1000:1000::/home/rocky:/bin/bash***
+										rocky:x:1000:1000::/home/rocky:/bin/bash
     												    
  								   name:pass:uid:gid:fullName:homeDir:allowed user shell
 ```
@@ -45,7 +45,7 @@
 
 **ls /etc/group**--->
 ```
-							***lpadmin:x:114:mahmoud-khaled***		
+							    lpadmin:x:114:mahmoud-khaled	
 												
 					     	groupName:groupPassW:GID:groupMembers
 ```
@@ -55,7 +55,7 @@
 
 **ls /etc/shadow**---> 
 ```
-										***rocky:!!:20570:0:99999:7:::***
+										 rocky:!!:20570:0:99999:7:::
                     
            	user:hashedPass:epochAge:resetWait:PassLife:warnBuffer:expiredLogin:AccExpire:Futureuse
 ```
@@ -87,10 +87,10 @@ WHO   WHERE=(AS_WHOM)   WHAT
 
 *inside that, we can have all the above in files named: **xx-entry.conf**, like 			systemd dropins.*
 
-*Best practice  is not to delete users, becaseu it creates accedental data 				  leakage in the deleted user home dir if another user got created with the id                                                                                                                                                                                                                                  of the deleted user. **usermod -l** is safer or delete his home perminentely*
+*Best practice  is not to delete users, becaseu it creates accedental data leakage in the deleted user home dir if another user got created with the id of the deleted user. **usermod -l** is safer or delete his home perminentely*
 
 
-
+##########################################################################################################################
 
 
 ### **Permission Managment:**
