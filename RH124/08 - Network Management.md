@@ -132,6 +132,7 @@ Socket states in output:
 **LISTEN** → Service waiting for connections.  
 **ESTAB** → Active connection established.  
 
+  
 
 ### ***NetworkManager (nmcli / nmtui):***  
 ---
