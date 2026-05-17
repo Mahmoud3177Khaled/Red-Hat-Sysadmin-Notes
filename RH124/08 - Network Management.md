@@ -134,6 +134,7 @@ Socket states in output:
 
 
 ### ***NetworkManager (nmcli / nmtui):***  
+---
 **nmcli c s** → Show all network profiles.  
 **nmcli c s "Profile"** → Show config files for that profile.  
 **nmcli dev show "NIC"** ---> Shw nm config file for an nm profile.  
