@@ -10,10 +10,10 @@
 **useradd \<username\>** ---> Add a new user.
 
 **ls /etc/passwd** --->
+```
 ***rocky:x:1000:1000::/home/rocky:/bin/bash***
-^
 name:pass:uid:gid:fullName:homeDir:allowed user shell
-
+```
 **useradd \<user\>**
 **userdel \<user\>**
 **users**
@@ -40,18 +40,18 @@ name:pass:uid:gid:fullName:homeDir:allowed user shell
 *Every user has his own and private primary group id, containing only him*
 
 **ls /etc/group** --->
-
-***lpadmin:x:114:mahmoud-khaled***
-^
+```
+lpadmin:x:114:mahmoud-khaled
 groupName:groupPassW:GID:groupMembers
-
+```
 ***Groups have passwords so users can add themselves to them if they know the password***
 
 **ls /etc/shadow** --->
 
-***rocky:!!:20570:0:99999:7:::***
-^
+```
+rocky:!!:20570:0:99999:7:::
 user:hashedPass:epochAge:resetWait:PassLife:warnBuffer:expiredLogin:AccExpire:Futureuse
+```
 
 **chsh \<user\> /bin/bash** ---> Change the login shell of a user (like /sbin/nologin or /bin/bash).
 
