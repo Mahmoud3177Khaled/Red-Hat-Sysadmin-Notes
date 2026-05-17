@@ -3,9 +3,9 @@
 **id \<user\>** ---> Show all details of a user (UID, GID, secondary groups).
 **passwd \<user\>** ---> Change user password.
 
-**ls /etc/passwd** ---> See all users (no passwords here).
-**ls /etc/shadow** ---> See all users passwords (hashed).
-**ls /etc/group** ---> See all user groups.
+**ls /etc/passwd** ---> See all users (no passwords here).  
+**ls /etc/shadow** ---> See all users passwords (hashed).  
+**ls /etc/group** ---> See all user groups.  
 
 **useradd \<username\>** ---> Add a new user.
 
