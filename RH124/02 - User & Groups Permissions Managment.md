@@ -90,7 +90,7 @@ WHO   WHERE=(AS_WHOM)   WHAT
 *Best practice  is not to delete users, becaseu it creates accedental data leakage in the deleted user home dir if another user got created with the id of the deleted user. **usermod -l** is safer or delete his home perminentely*
 
 
-##########################################################################################################################
+
 
 
 ### **Permission Managment:**
