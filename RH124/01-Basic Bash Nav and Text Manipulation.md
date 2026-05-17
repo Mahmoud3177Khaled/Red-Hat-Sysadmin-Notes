@@ -71,10 +71,10 @@ isos/
 **cat <<EOF > cattest** ---> takes input from keyboard stdin until i enter "EOF", then saves it in cattest
 
 
-	File descriptors: STDIN -> 0 | STDOUT -> 1 | STDERR -> 2
+File descriptors: STDIN -> 0 | STDOUT -> 1 | STDERR -> 2
 
-	vimtutor!!!!!!!!!!!!!!!!!!
-	**:set nu**---> Enable line numbering in vim
+vimtutor!!!!!!!!!!!!!!!!!!
+**:set nu**---> Enable line numbering in vim
 
 
 **cp <Sourcepath> <DestPath>** ---> to copy files (add **-r** to copy directories)
