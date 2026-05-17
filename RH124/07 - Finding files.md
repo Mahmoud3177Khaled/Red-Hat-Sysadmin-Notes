@@ -59,7 +59,7 @@ Units: k (kilo), M (mega), G (giga) --- case matters.
 **find /home -perm 764 -ls** ---> Show detailed info (perms, owner, size) for matched files.  
 
 *If you omit the directory, find starts from the current directory.*  
-*Always quote wildcards in find: '.txt' not *.txt  
+*Always quote wildcards in find: '*.txt' not *.txt  
 
 
 Thank you :)
