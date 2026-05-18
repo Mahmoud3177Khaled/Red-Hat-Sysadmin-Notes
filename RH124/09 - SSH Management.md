@@ -14,19 +14,19 @@
 
 1. I wanna **ssh student@serverb** from servera
 2. i got to the ip of who i think is serverb, and ask them to send thier pub key
-3. I recieve their pub key, and see if i have verified before they really are serverb by 									looking in my **~/.ssh/known_hosts** then **/etc/ssh/ssh_known_hosts**:
-		- I find their pubkey there --> great, they are who i thought were serverb!
-		- I dont find that pubkey there --> Ok, they still might be who I think they are --> print 																							   their pub key to the user and he decides if thats the pub 																								   key of who i think is serverb or not... (yes, no, [fingerprint]):
-																							- Yes --> From now on this is who i call serverb --> I save 																													  his pub key under ~/.ssh/known_hosts
-																							- No --> Close connection, this is NOT serverb.
+3. I recieve their pub key, and see if i have verified before they really are serverb by 									looking in my **~/.ssh/known_hosts** then **/etc/ssh/ssh_known_hosts**:  
+		- I find their pubkey there --> great, they are who i thought were serverb!  
+		- I dont find that pubkey there --> Ok, they still might be who I think they are --> print 																							   their pub key to the user and he decides if thats the pub 																								   key of who i think is serverb or not... (yes, no, [fingerprint]):  
+																							- Yes --> From now on this is who i call  --> I save his pub key under ~/.ssh/known_hosts  
+																							- No --> Close connection, this is NOT serverb.  
 
-4. Great, I am now sure i am talking to serverb... now i need to prove to serverb i really am 				student...
-5. I send my student pub key under **~/.ssh/id_ed25519.pub** to serverb for him to check me.
-6. serverb checks if my pubkey exists under **~/.ssh/authorized_keys** on its end:
-			- serverb finds it there --> Amazing, it is really student.
-			- serverb doesnt find it there --> Ok, they still might be student but i didn't save his pub 																						key there... ---> Prompt him for his password:
-																								- password correct --> Amazing! let him in!
-																								- password incorrect --> Thats not student... close 																																									  connection.
+4. Great, I am now sure i am talking to serverb... now i need to prove to serverb i really am student...  
+5. I send my student pub key under **~/.ssh/id_ed25519.pub** to serverb for him to check me.  
+6. serverb checks if my pubkey exists under **~/.ssh/authorized_keys** on its end:  
+			- serverb finds it there --> Amazing, it is really student.  
+			- serverb doesnt find it there --> Ok, they still might be student but i didn't save his pub key there... ---> Prompt him for his password:  
+																								- password correct --> Amazing! let him in!  
+																								- password incorrect --> Thats not student... close connection.  
 7. Looking Great... you really are serverb and u are sure i really am student... now lets create a session key to encrypt our communication with, so none except us understand what we are saying!         Mission accomblished! Connection established!
 
 8. hmm, but i really dont want to keep stating my password in step 6
