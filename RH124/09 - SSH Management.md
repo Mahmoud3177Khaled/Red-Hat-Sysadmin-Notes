@@ -36,7 +36,14 @@ Also, **ssh-copy-id -i "PubKeyPath" serverb** ---> To specify which pubkey to co
 
 Inside **~/.ssh/ssh_config** i can change the behavior of what i do if things go sideways... like:
 
-**StrictHostKeyChecking** -->  What will i do if the pub key i recive from step 3 isn't the one i have saved?
+
+**AllowGroups admins** ---> To allow ONLY any user in the admins group login via ssh  
+
+**PasswordAuthentication Yes** ---> To allow users to ssh without pub\private keys  
+
+**PermitRootLogin Yes** ---> To allow sshing from outside to a root shell  
+
+**StrictHostKeyChecking** -->  What will i do if the pub key i recive from step 3 isn't the one i have saved?  
 
 *Options:*  
 **yes** --> Refuses connection if key doesn't match. (Most secure, need manual host keys copying)  
@@ -45,7 +52,6 @@ Inside **~/.ssh/ssh_config** i can change the behavior of what i do if things go
 **no** -->  Auto-accepts new keys **AND** changed keys.  (Least secure to MITM attacks).  
 
 **ssh -o "setting"="option" >user>@>IP>** --> Temporarily change behavior one connection.  
-
 
 
 
@@ -60,7 +66,7 @@ Inside **~/.ssh/ssh_config** i can change the behavior of what i do if things go
 On untrusted networks, verify fingerprints out-of-band (phone call, trusted person) before adding keys --- otherwise you're vulnerable to MITM during the scan itself.  
 
 
-
+**vim /etc/ssh/sshd_config.d/xx-entry.conf** ---> To add/modify sshd configs using dropins across all users.  
 
 
 
